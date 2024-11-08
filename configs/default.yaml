@@ -2,7 +2,7 @@ defaults:
   - _self_
   - hydra: default
   - datamodule: vorticity_Re_16000
-  - model: HNOT
+  - model: HiNOTE
   - optim: default
   - scheduler: default
   - callback: default
