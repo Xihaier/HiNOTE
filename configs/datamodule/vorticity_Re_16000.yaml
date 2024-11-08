@@ -1,7 +1,7 @@
 _target_: data_interface.DataModule
 name: vorticity_Re_16000
 data_dir: data/vorticity_Re_16000.npy
-model: HNOT
+model: HiNOTE
 pre_method: minmax
 d_trans: bicubic
 reduce_dim: []

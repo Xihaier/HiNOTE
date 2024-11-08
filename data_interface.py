@@ -12,7 +12,7 @@ class DataModule(pl.LightningDataModule):
     def __init__(self, 
         name: str = "vorticity_Re_16000",
         data_dir: str = "data/vorticity_Re_16000.npy",
-        model: str = "HNOT",
+        model: str = "HiNOTE",
         pre_method: str = "zscore",
         d_trans: str = "uniform",
         reduce_dim: list = [],

@@ -1,7 +1,7 @@
 _target_: data_interface.DataModule
 name: baryon_density
 data_dir: data/baryon_density.npy
-model: HNOT
+model: HiNOTE
 pre_method: minmax
 d_trans: bicubic
 reduce_dim: []

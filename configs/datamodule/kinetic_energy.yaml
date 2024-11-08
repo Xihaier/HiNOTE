@@ -1,7 +1,7 @@
 _target_: data_interface.DataModule
 name: kinetic_energy
 data_dir: data/kinetic_energy.npy
-model: HNOT
+model: HiNOTE
 pre_method: minmax
 d_trans: bicubic
 reduce_dim: []

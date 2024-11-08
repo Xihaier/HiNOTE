@@ -1,7 +1,7 @@
 _target_: data_interface.DataModule
 name: MRI
 data_dir: data/MRI.npy
-model: HNOT
+model: HiNOTE
 pre_method: minmax
 d_trans: bicubic
 reduce_dim: []

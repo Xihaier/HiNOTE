@@ -1,7 +1,7 @@
 _target_: data_interface.DataModule
 name: water_vapor
 data_dir: data/water_vapor.npy
-model: HNOT
+model: HiNOTE
 pre_method: minmax
 d_trans: bicubic
 reduce_dim: []
