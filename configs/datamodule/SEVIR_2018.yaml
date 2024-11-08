@@ -1,0 +1,20 @@
+_target_: data_interface.DataModule
+name: SEVIR_2018
+data_dir: data/SEVIR_2018.npy
+model: HNOT
+pre_method: minmax
+d_trans: bicubic
+reduce_dim: []
+n_train_val_test: [800, 100, 100]
+b_train_val_test: [64, 10, 1]
+crop_size: 128
+upscale_factor: 4
+n_patches: 8
+noise_ratio: 0.05
+img_low_res: 32
+scale_min: 1
+scale_max: 4
+augment: False
+sample_q: 1024
+viz_size: [128, 128, 768, 768]
+num_workers: 4

@@ -1,0 +1,12 @@
+defaults:
+  - _self_
+  - hydra: default
+  - datamodule: vorticity_Re_16000
+  - model: HNOT
+  - optim: default
+  - scheduler: default
+  - callback: default
+  - logger: wandb
+  - trainer: default
+
+seed: 3407

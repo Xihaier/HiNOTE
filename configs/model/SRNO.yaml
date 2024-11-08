@@ -1,0 +1,15 @@
+_target_: model_interface.ArbitraryScaleModule
+params_data: ${datamodule}
+params_model:
+  name: SRNO
+  n_resblocks: 16 
+  n_feats: 64
+  res_scale: 1
+  scale: 2
+  no_upsampling: False
+  rgb_range: 1
+  width: 256
+  blocks: 16
+  save_dir: ${hydra:run.dir}
+params_optim: ${optim}
+params_scheduler: ${scheduler}

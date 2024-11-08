@@ -1,0 +1,18 @@
+_target_: model_interface.SingleScaleModule
+params_model:
+  name: SwinIR
+  in_channels: 1
+  upscale_factor: 4
+  resol_h: 1024
+  resol_w: 1024
+  window_size: 8
+  img_range: 1.
+  depths: [6, 6, 6, 6]
+  embed_dim: 120 
+  num_heads: [6, 6, 6, 6]
+  mlp_ratio: 2 
+  upsampler: pixelshuffle 
+  resi_connection: 1conv
+  save_dir: ${hydra:run.dir}
+params_optim: ${optim}
+params_scheduler: ${scheduler}

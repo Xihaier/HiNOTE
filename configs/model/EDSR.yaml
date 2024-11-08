@@ -1,0 +1,10 @@
+_target_: model_interface.SingleScaleModule
+params_model:
+  name: EDSR
+  in_channels: 1
+  hidden_channels: 64
+  n_res_blocks: 16
+  upscale_factor: 4
+  save_dir: ${hydra:run.dir}
+params_optim: ${optim}
+params_scheduler: ${scheduler}

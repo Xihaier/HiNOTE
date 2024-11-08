@@ -1,0 +1,14 @@
+_target_: model_interface.SingleScaleModule
+params_model:
+  name: DFNO
+  in_feats: 1
+  n_feats: 64
+  out_feats: 3
+  n_res_blocks: 5
+  upscale_factor: 4
+  modes1: 12
+  modes2: 12
+  width: 32
+  save_dir: ${hydra:run.dir}
+params_optim: ${optim}
+params_scheduler: ${scheduler}

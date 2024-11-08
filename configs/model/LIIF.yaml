@@ -1,0 +1,18 @@
+_target_: model_interface.ArbitraryScaleModule
+params_data: ${datamodule}
+params_model:
+  name: LIIF
+  edsr_n_resblocks: 16 
+  edsr_n_feats: 64
+  edsr_res_scale: 1
+  edsr_scale: 2
+  edsr_no_upsampling: False
+  edsr_rgb_range: 1
+  mlp_out_dim: 1
+  mlp_hidden_list: [256, 256, 256]
+  local_ensemble: True
+  feat_unfold: True
+  cell_decode: True
+  save_dir: ${hydra:run.dir}
+params_optim: ${optim}
+params_scheduler: ${scheduler}

@@ -1,0 +1,8 @@
+_target_: model_interface.SingleScaleModule
+params_model:
+  name: SRCNN
+  in_channels: 1
+  upscale_factor: 4
+  save_dir: ${hydra:run.dir}
+params_optim: ${optim}
+params_scheduler: ${scheduler}

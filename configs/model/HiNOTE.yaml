@@ -1,0 +1,15 @@
+_target_: model_interface.HiNOTEModule
+params_data: ${datamodule}
+params_model:
+  name: HiNOTE
+  feature_up_ratio: 4
+  fourier_up: Corner
+  feature_combine: add 
+  non_act: GELU 
+  liif_up_method: nearest
+  attention_width: 256
+  attention_head: 16
+  hierarchical_levels: 1
+  save_dir: ${hydra:run.dir}
+params_optim: ${optim}
+params_scheduler: ${scheduler}
