@@ -139,7 +139,7 @@ This project utilizes several datasets, each of which is available online. Here 
 To train a model, modify the configuration files in `configs/` as needed. Then, run:
 
 ```bash
-python train.py --config configs/model/HiNOTE.yaml
+python train.py
 ```
 
 ### Testing
@@ -147,7 +147,7 @@ python train.py --config configs/model/HiNOTE.yaml
 To test a trained model, use the following command:
 
 ```bash
-python test.py --config configs/model/HiNOTE.yaml
+python test.py
 ```
 
 ### Running the Script
